@@ -1,0 +1,179 @@
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+h1 {
+    font-size: 30px;
+}
+h2 {
+    font-size: 20px;
+}
+h5 {
+    font-size: 16px;
+}
+
+#accepted {
+    color:rgba(255,255,255,0);
+    font-family: sans-serif;
+    position: fixed;
+    visibility: visible;
+    top:45%;
+    left:30%;
+    animation: accepted 2s ease-in;
+}
+
+#cancel_form {
+    border: none;
+    background: none;
+    color: white;
+    position: absolute;
+    font-size: x-large;
+    left:90%;
+    cursor:pointer;
+}
+
+#contactForm {
+    background:rgba(71, 25, 25, 0.7);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    visibility: hidden;
+    height:100%;
+    width: 100%;
+}
+#visit{
+    text-align: center;
+    float: left;
+    padding-left: 5px;
+    margin: 17px auto;
+    text-decoration:none;
+    color:white;
+    font-size: x-small;
+    font-family: sans-serif;
+    width:50px;
+}
+
+#cold_war{
+    height: 50px;
+    background-color: #1c2022;
+    border-radius: 5px;
+    margin-top: 2px;
+}
+#cold_war:hover{
+    background-color: #2e2e2e;
+}
+
+#cw_logo{
+    height: 35px;
+    float: right;
+    padding: 5px;
+}
+
+input[type=text]{
+    border: none;
+    font-size: large;
+    padding: 10px;
+    margin-left:10px;
+    width:  70%;
+}
+
+#links{
+    position: absolute;
+    top: 10%;
+    margin-left: 70%;
+}
+
+#submitForm{
+    border: none;
+    border-radius: 2px;
+    background-color: #1c2022;
+    color: white;
+    font-size: large;
+    padding: 15px 20px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+#newsletterForm{
+    color: white;
+    font-family: sans-serif;
+    font-size: large;
+    position: fixed;
+    left: 10px;
+    top: 10%;
+    width:100%;
+}
+
+#show_form {
+    border: none;
+    border-radius: 2px;
+    background-color: #1c2022;
+    color: white;
+    font-size: x-small;
+    padding: 5px 10px;
+    font-family: sans-serif;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#show_form:hover{
+    background-color: #2e2e2e;
+}
+
+video {
+    margin: 0 auto;
+    width: 100%;
+}
+
+#waiting{
+    color:white;
+    font-family: sans-serif;
+    position: fixed;
+    top:45%;
+    left:40%;
+    animation: pulse 3s infinite;
+    animation-timing-function: ease-out;
+}
+
+@keyframes pulse{
+    from {
+        color: white;
+        text-shadow: 3px 2px rgba(122, 38, 38, 0.5);
+    }
+    to {
+        color: rgba(255,255,255,0.5);
+        text-shadow: 2px 1px rgb(142, 213, 255, 0.5);
+    }
+}
+
+@-webkit-keyframes pulse{
+    from {
+        color: white;
+        text-shadow: 3px 2px rgba(122, 38, 38, 0.5);
+    }
+    to {
+        color: rgba(255,255,255,0.5);
+        text-shadow: 2px 1px rgb(142, 213, 255, 0.5);
+    }
+}
+
+@keyframes accepted{
+    from {
+       color: rgba(255,255,255,0);
+    }
+    to {
+       color: rgba(255,255,255,1);
+    }
+}
+
+@-webkit-keyframes accepted{
+    from {
+        color: rgba(255,255,255,0);
+    }
+    to {
+        color: rgba(255,255,255,1);
+    }
+}

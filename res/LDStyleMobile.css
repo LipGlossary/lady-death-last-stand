@@ -1,0 +1,175 @@
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+h1 {
+    font-size: 20px;
+}
+h2 {
+    font-size: 18px;
+}
+h5 {
+    font-size: 16px;
+}
+
+a{
+    text-decoration:none;
+    color:white;
+    font-size: large;
+    font-family: sans-serif;
+}
+
+#visit{
+    text-align: center;
+    font-size: small;
+    padding: 5px;
+}
+
+#cwlink{
+    background-color: #1c2022;
+}
+
+#accepted {
+    color:rgba(255,255,255,0);
+    font-family: sans-serif;
+    position: fixed;
+    visibility: visible;
+    top:45%;
+    left:30%;
+    animation: accepted 2s ease-in;
+}
+
+#cancel_form {
+    border: none;
+    background: none;
+    color: white;
+    position: absolute;
+    font-size: 16px;
+    left:200px;
+    cursor:pointer;
+}
+
+#cold_war{
+    background-color: #1c2022;
+    border-radius: 5px;
+    margin: 2px 0px;
+}
+
+#contactForm {
+    background:rgba(71, 25, 25, 0.7);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    visibility: hidden;
+    height:100%;
+    width: 100%;
+}
+
+input[type=text]{
+    border: none;
+    font-size: large;
+    padding: 10px;
+    margin: 0px 10px;
+    width:  70%;
+}
+#submitForm{
+    border: none;
+    border-radius: 2px;
+    background-color: #1c2022;
+    color: white;
+    font-size: large;
+    padding: 15px 20px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+#newsletterForm{
+    color: white;
+    font-family: sans-serif;
+    font-size: small;
+    position: fixed;
+    left: 10px;
+    top: 10%;
+    width:100%;
+}
+
+#links{
+    position: relative;
+    width: 100%;
+}
+
+#show_form {
+    border: none;
+    border-radius: 2px;
+    background-color: #1c2022;
+    color: white;
+    font-size: small;
+    padding: 15px 20px;
+    font-family: sans-serif;
+    text-align: center;
+    cursor: pointer;
+}
+
+#cw_logo{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+video {
+    margin: 0 auto;
+    width: 100%;
+}
+
+#waiting{
+    color:white;
+    font-family: sans-serif;
+    position: fixed;
+    top:45%;
+    left:40%;
+    animation: pulse 3s infinite;
+    animation-timing-function: ease-out;
+}
+
+@keyframes pulse{
+    from {
+        color: white;
+        text-shadow: 3px 2px rgba(122, 38, 38, 0.5);
+    }
+    to {
+        color: rgba(255,255,255,0.5);
+        text-shadow: 2px 1px rgb(142, 213, 255, 0.5);
+    }
+}
+
+@-webkit-keyframes pulse{
+    from {
+        color: white;
+        text-shadow: 3px 2px rgba(122, 38, 38, 0.5);
+    }
+    to {
+        color: rgba(255,255,255,0.5);
+        text-shadow: 2px 1px rgb(142, 213, 255, 0.5);
+    }
+}
+
+@keyframes accepted{
+    from {
+       color: rgba(255,255,255,0);
+    }
+    to {
+       color: rgba(255,255,255,1);
+    }
+}
+
+@-webkit-keyframes accepted{
+    from {
+        color: rgba(255,255,255,0);
+    }
+    to {
+        color: rgba(255,255,255,1);
+    }
+}

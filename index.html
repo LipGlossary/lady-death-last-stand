@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--Primary Style Sheet, Mobile SS forthcoming-->
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 769px)" href="./res/LDStyleMain.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 421px) and (max-width: 768px)" href="./res/LDStyleMid.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 420px)" href="./res/LDStyleMobile.css">
+    <!--font awesome link-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <title>Lady Death The Tabletop Game</title>
+</head>
+
+<body>
+
+    <video id="LDVid" autoplay muted loop>
+            <source src="./res/LD_MOTION_1080_3.mov" type="video/mp4">
+        </video>
+    <div id="links">
+        
+        
+        <div id="cold_war">
+                <a id="cwlink" href="https://www.coldwar.us" target="_blank">
+                <img id="cw_logo" src="./res/CWI-Logo-Transparent.png" />
+                
+                <div id="visit">VISIT US</div>
+                </a>
+        </div>
+        <div id="show_form" onclick="showForm()">SIGN UP FOR UPDATES</div>
+
+    </div>
+    <div id="contactForm">
+        <div id="newsletterForm">
+            NEWSLETTER FORM <i id="cancel_form" class="fas fa-times" onclick="cancelForm()"></i><br />
+            <h2>EMAIL ADDRESS *</h2>
+            <input id="emailAddress" type="text" name="emailAddress" value="Email Address" onclick="entryTextToggle()"><br /><br />
+            <button id="submitForm">SUBMIT</button><br />
+            <h5>*WE RESPECT YOUR PRIVACY.</h5>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="./res/player.js"></script>
+    <script src="./res/formControl.js"></script>
+</body>
+
+</html>
