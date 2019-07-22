@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,6 +14,8 @@
       href="./res/LDStyleMid.css"
     />
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 420px)" href="./res/LDStyleMobile.css" />
+    <!-- SDCC overrides -->
+    <link rel="stylesheet" type="text/css" href="./res/@lipglossary/style.css" />
     <!--font awesome link-->
     <link
       rel="stylesheet"
@@ -21,40 +23,93 @@
       integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
       crossorigin="anonymous"
     />
-    <title>Lady Death The Tabletop Game</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Fondamento:400,400i|Pirata+One&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+    <title>Lady Death: Last Stand</title>
   </head>
 
   <body>
-    <video id="LDVid" autoplay muted loop>
-      <source src="./res/LD_MOTION_1080_3.mov" type="video/mp4" />
-    </video>
-    <div id="links">
-      <div id="cold_war">
-        <a id="cwlink" href="https://www.coldwar.us" target="_blank">
-          <img id="cw_logo" src="./res/CWI-Logo-Transparent.png" />
+    <section>
+      <video id="LDVid" autoplay muted loop>
+        <source src="./res/LD_MOTION_1080_3.mov" type="video/mp4" />
+      </video>
+      <div id="links">
+        <div id="cold_war">
+          <a id="cwlink" href="https://www.coldwar.us" target="_blank">
+            <img id="cw_logo" src="./res/CWI-Logo-Transparent.png" />
+            <div id="visit">VISIT US</div>
+          </a>
+        </div>
+        <div id="show_form" onclick="showForm()">SIGN UP FOR UPDATES</div>
+      </div>
+      <div id="contactForm">
+        <div id="newsletterForm">
+          NEWSLETTER FORM <i id="cancel_form" class="fas fa-times" onclick="cancelForm()"></i><br />
+          <h2>EMAIL ADDRESS *</h2>
+          <input
+            id="emailAddress"
+            type="text"
+            name="emailAddress"
+            value="Email Address"
+            onclick="entryTextToggle()"
+          /><br /><br />
+          <button id="submitForm">SUBMIT</button><br />
+          <h5>*WE RESPECT YOUR PRIVACY.</h5>
+        </div>
+      </div>
+    </section>
 
-          <div id="visit">VISIT US</div>
-        </a>
-      </div>
-      <div id="show_form" onclick="showForm()">SIGN UP FOR UPDATES</div>
-    </div>
-    <div id="contactForm">
-      <div id="newsletterForm">
-        NEWSLETTER FORM <i id="cancel_form" class="fas fa-times" onclick="cancelForm()"></i><br />
-        <h2>EMAIL ADDRESS *</h2>
-        <input
-          id="emailAddress"
-          type="text"
-          name="emailAddress"
-          value="Email Address"
-          onclick="entryTextToggle()"
-        /><br /><br />
-        <button id="submitForm">SUBMIT</button><br />
-        <h5>*WE RESPECT YOUR PRIVACY.</h5>
-      </div>
-    </div>
+    <section class="section" id="sdcc-flier">
+      <header>
+        <img alt="Lady Death: Last Stand" src="./res/LDLS_text-logo.png" />
+        <h3>
+          The first ever Lady Death game
+        </h3>
+      </header>
+      <!-- flier info -->
+      <ul class="detail">
+        <li class="balance-text">Single player or Co-op</li>
+        <li class="balance-text">18 Exclusive custome dice</li>
+        <li class="balance-text">250+ Encounter cards featuring Lady Death's most dangerous foes</li>
+        <li class="balance-text">Persistent skills, abilities, and gear</li>
+        <li class="balance-text">Stand-alone and RPG modes</li>
+        <li class="balance-text">50+ Abilities to choose from</li>
+        <li class="balance-text">60+ Items to loot to enhance your avatar</li>
+        <li class="balance-text">5 Beautifully crafted game boards</li>
+      </ul>
+      <footer>
+        <p>Coming to Kickstarter October 2019</p>
+        <p><a href="https://www.coldwar.us/">www.coldwar.us</a></p>
+      </footer>
+    </section>
+
+    <section class="section" id="social">
+      <a aria-label="link to CWI website" class="img" href="https://www.coldwar.us/">
+        <img alt="CWI logo" height="607" src="./res/CWI-Logo-Transparent.png" width="1000" />
+      </a>
+      <a aria-label="link to Twitter" class="icon" href="https://twitter.com/PlayLadyDeath/">
+        <i class="fab fa-fw fa-lg fa-twitter"></i>
+      </a>
+      <a aria-label="link to Facebook" class="icon" href="https://www.facebook.com/LadyDeathGameOfficial/">
+        <i class="fab fa-fw fa-lg fa-facebook-square"></i>
+      </a>
+      <a aria-label="link to Instagram" class="icon" href="https://www.instagram.com/ladydeath.laststand/">
+        <i class="fab fa-fw fa-lg fa-instagram"></i>
+      </a>
+    </section>
+
+    <footer class="section">
+      <p>
+        LADY DEATH and related logos, characters, names, and distinctive likenesses thereof are trademarks or registered
+        trademarks of Lady Death, LLC, under license to Coffin Comics, LLC
+      </p>
+    </footer>
+
     <!-- Scripts -->
     <script src="./res/player.js"></script>
     <script src="./res/formControl.js"></script>
+    <script src="./res/@lipglossary/jquery.balancetext.js"></script>
   </body>
 </html>

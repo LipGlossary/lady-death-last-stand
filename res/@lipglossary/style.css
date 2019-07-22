@@ -1,0 +1,137 @@
+body {
+  overflow-y: auto;
+}
+
+footer.section {
+  font-size: 1.5vw;
+  color: lightgrey;
+}
+
+.section {
+  align-items: stretch;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5vw;
+  padding: 5vmin;
+}
+
+.section * {
+  box-sizing: border-box;
+  transition-delay: 0;
+  transition-duration: 200ms;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+}
+
+.section > * {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.section a:link {
+  box-shadow: inset 0 -0.1em 0 0 red;
+  color: red;
+  letter-spacing: calc(1em / 12);
+  text-decoration: none;
+}
+
+.section a:link:hover {
+  text-shadow: 0 0 0.5em white;
+}
+
+.section a.icon:link {
+  box-shadow: none;
+}
+
+.section a.img:link {
+  align-items: center;
+  box-shadow: none;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.section a.img:link:hover {
+  /* order matters */
+  filter: drop-shadow(0 0 0.5em rgba(255, 255, 255, 0.75));
+  filter: drop-shadow(0 0 0.5em 0 rgba(255, 255, 255, 0.75));
+  -webkit-filter: drop-shadow(0 0 0.5em rgba(255, 255, 255, 0.75));
+  -webkit-filter: drop-shadow(0 0 0.5em 0 rgba(255, 255, 255, 0.75));
+}
+
+.section img {
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+}
+
+#sdcc-flier footer {
+  font-style: normal;
+  text-align: center;
+}
+
+#sdcc-flier footer > * {
+  margin: 0.5em;
+}
+
+#sdcc-flier header {
+  align-items: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 640px;
+}
+
+#sdcc-flier header h3 {
+  font-family: "Pirata One", cursive;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: calc(1em / 12);
+  text-align: center;
+}
+
+#sdcc-flier header > * {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+#sdcc-flier ul {
+  align-self: center;
+  font-family: "Fondamento", cursive;
+  font-style: italic;
+  font-weight: 400;
+  list-style-type: none;
+  padding-left: 1.5em;
+}
+
+#sdcc-flier ul li {
+  text-indent: -1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+#sdcc-flier ul li:before {
+  /* ⁜ */
+  content: "\205C";
+  display: inline-flex;
+  justify-content: center;
+  width: 1em;
+}
+
+#social {
+  height: 10vw;
+  flex-direction: row;
+  justify-content: space-around;
+  max-height: 10vw;
+}
+
+#social > * {
+  max-height: inherit;
+}
+
+#social .img > * {
+  max-height: inherit;
+}
